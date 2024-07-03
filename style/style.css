@@ -1,1 +1,36 @@
-/*# sourceMappingURL=style.css.map */
+#main {
+  width: 100%;
+  height: 100vh;
+}
+#main #companies {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#main #companies .companies__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main #companies .companies__info-title {
+  letter-spacing: 1px;
+}
+#main #companies .companies__info-description {
+  opacity: 0.7;
+  max-width: 500px;
+  text-align: center;
+  font-size: 14px;
+}
+#main #companies .companies__list {
+  width: 550px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#main #companies .companies__link img {
+  width: 32px;
+  height: 32px;
+}/*# sourceMappingURL=style.css.map */
