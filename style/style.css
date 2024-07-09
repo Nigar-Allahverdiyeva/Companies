@@ -5,32 +5,47 @@
 #main #companies {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#main #companies .companies__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#main #companies .companies__info-title {
-  letter-spacing: 1px;
-}
-#main #companies .companies__info-description {
-  opacity: 0.7;
-  max-width: 500px;
-  text-align: center;
-  font-size: 14px;
 }
 #main #companies .companies__list {
-  width: 550px;
-  list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  height: 100vh;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#main #companies .companies__item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(139, 53, 0);
+}
+@media screen and (max-width: 768px) {
+  #main #companies .companies__item {
+    width: 50px;
+    height: 50px;
+  }
 }
 #main #companies .companies__link img {
   width: 32px;
   height: 32px;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: main;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .companies__item {
+    background-color: rgb(109, 139, 0) !important;
+  }
 }/*# sourceMappingURL=style.css.map */
