@@ -1,0 +1,33 @@
+@import "variables";
+
+@mixin mobile {
+    @media screen and (max-width: 575px) {
+      @content;
+  }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 767px) {
+      @content;
+  }
+}
+
+@mixin desktop {
+    @media screen and (max-width: 991px) {
+      @content;
+  }
+}
+
+@mixin large {
+    @media screen and (min-width: 1199px) {
+      @content;
+  }
+}
+
+
+@mixin flex($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
